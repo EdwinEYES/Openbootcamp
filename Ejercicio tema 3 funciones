@@ -1,0 +1,30 @@
+public class Main {
+
+    //Codigo principal
+    public static void main(String[] args) {
+        //Creacion del objeto
+        Coche MiCoche = new Coche();
+        //LLamado de la funcion Restar puertas
+        MiCoche.RestarPuerta();
+        int resultado = 0;
+        //Llamado de la funcion Suma
+        resultado = suma(30, 40, 50);
+        //Impresion del resultado Suma
+        System.out.println(resultado);
+        //Impresion del resultado para restar puertas
+        System.out.println(MiCoche.Puerta);
+    }
+    //Funcion suma
+    public static int suma(int a, int b, int c){
+         return a + b + c;
+    }
+}
+
+//Clase Coche
+class Coche{
+    public int Puerta = 4;
+
+    public void RestarPuerta(){
+        this.Puerta--;
+    }
+}
